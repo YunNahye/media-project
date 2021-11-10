@@ -1,7 +1,6 @@
 import './style/App.css';
 import Navigation from './Navigation';
 import RecycleLabel from './RecycleLabel';
-import Information from './Information';
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
           </div>
         </div>
       </div>
-      <Information></Information>
     </div>
   );
 }

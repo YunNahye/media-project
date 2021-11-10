@@ -1,20 +1,20 @@
 .label {
   display: inline-block;
   width: 70px;
-  height: 30px;
   margin: 10px;
-  padding-top: 7px;
+  padding: 5px 0;
   border-radius: 5px;
 }
 
 .default {
-  background-color: rgb(233, 231, 218);
+  background-color: white;
   color: black;
-  box-shadow: 0 2px 4px 0 gray;
+  border: 1px solid black;
+  /* box-shadow: 0 2px 4px 0 gray; */
 }
 
 .on-focus {
-  background-color: rgb(181, 184, 156);
-  color: black;
-  box-shadow: 0 1px 2px 0 gray;
+  background-color: black;
+  color: white;
+  /* box-shadow: 0 1px 2px 0 gray; */
 }

@@ -1,14 +1,43 @@
-.App {
-  margin: 50px auto;
-  width: 500px;
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .App .container {
+    width: 450px;
+    height: 600px;
+    border-radius: 15px;
+  }
+}
+
+.title {
+  margin-bottom: 80px;
 }
 
 .App .container {
   margin: 0 auto;
-  width: 450px;
+  padding-top: 130px;
+  width: 1230px;
+  height: 720px;
   background-color: white;
-  border: 1px solid gray;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  /* border: 1px solid gray; */
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); */
   overflow: hidden;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+.webcam-box {
+  float: left;
+  width: 550px;
+  height: 600px;
+  background-color: lightgray;
+}
+
+.contents {
+  float: left;
+  width: 550px;
+  height: 600px;
 }

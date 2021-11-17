@@ -9,7 +9,7 @@ let endPoint = "http://localhost:5000";
 let socket = io.connect(`${endPoint}`)
 
 function App() {
-  const [labelColor, setLabelColor] = useState(['gray', 'gray', 'gray', 'gray', 'gray', 'gray', 'gray']);
+  const [labelColor, setLabelColor] = useState(['default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default']);
 
   useEffect(() => {
     getMessages();
@@ -17,8 +17,8 @@ function App() {
 
   const getMessages = () => {
     socket.on("message", msg => {
-      const newLabelColor = ['gray', 'gray', 'gray', 'gray', 'gray', 'gray', 'gray'];
-      console.log(msg);
+      const newLabelColor = ['default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default'];
+      newLabelColor[msg] = 'on-focus';
       setLabelColor(newLabelColor);
     });
   }
@@ -32,11 +32,18 @@ function App() {
         </div>
         <div className="contents">
           <div className="label-box">
-            <RecycleLabel color="default">유리</RecycleLabel>
-            <RecycleLabel color="default">플라스틱</RecycleLabel>
-            <RecycleLabel color="default">종이</RecycleLabel>
-            <RecycleLabel color="default">캔</RecycleLabel>
-            <RecycleLabel color="default">스티로폼</RecycleLabel>
+            <RecycleLabel color={labelColor[0]}>plastic</RecycleLabel>
+            <RecycleLabel color={labelColor[1]}>brown_glass</RecycleLabel>
+            <RecycleLabel color={labelColor[2]}>can</RecycleLabel>
+            <RecycleLabel color={labelColor[3]}>cloth</RecycleLabel>
+            <RecycleLabel color={labelColor[4]}>green_glass</RecycleLabel>
+            <RecycleLabel color={labelColor[5]}>newspaper</RecycleLabel>
+            <RecycleLabel color={labelColor[6]}>paperbox</RecycleLabel>
+            <RecycleLabel color={labelColor[7]}>paperpack</RecycleLabel>
+            <RecycleLabel color={labelColor[8]}>styrofoam</RecycleLabel>
+            <RecycleLabel color={labelColor[9]}>vinyl</RecycleLabel>
+            <RecycleLabel color={labelColor[10]}>white_glass</RecycleLabel>
+            <RecycleLabel color={labelColor[11]}>else</RecycleLabel>
           </div>
         </div>
       </div>

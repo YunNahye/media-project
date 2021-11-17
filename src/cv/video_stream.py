@@ -49,7 +49,7 @@ def webcam():
       _, maximum = torch.max(result.data, 1)
       prediction = maximum.item()
       text = classes[prediction]
-      socketIo.emit("message", text)
+      socketIo.emit("message", prediction)
       cv2.putText(frame, text, (100, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
       cv2.rectangle(frame, (100, 100), (324, 324), (255, 0, 0), 2)
       # if grabbed:
@@ -83,7 +83,7 @@ if __name__ == '__main__':
                                            transforms.ToTensor(),
                                            transforms.Normalize([0.485, 0.456, 0.406],
                                                                 [0.229, 0.224, 0.225])])
-  loaded_model = load_checkpoint('C:/Users/zuu03/media_project/media-project/src/cv/13.pth')
+  loaded_model = load_checkpoint('13.pth')
 
   classes = ['plastic', 'brown_glass', 'can', 'cloth', 'green_glass', 'newspaper', 'paperbox', 'paperpack',
                 'styrofoam', 'vinyl', 'white_glass']

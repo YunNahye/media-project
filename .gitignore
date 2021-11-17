@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/cv/13.pth
 
 # testing
 /coverage

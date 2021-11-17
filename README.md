@@ -1,9 +1,11 @@
 ### 실행 방법
 #### 파이썬 먼저 실행 (video_stream.py)
 #### video 서버 열린 후 react 실행 (새 터미널에서)
-> npm install
-> npm install socket.io-client
-> npm start
+```
+npm install
+npm install socket.io-client
+npm start
+```
 ##### install 과정은 pull 하고 첫 실행시만 필요, 이후부터는 npm start로 실행 가능
 
 video_stream 코드에서

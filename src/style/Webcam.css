@@ -3,7 +3,7 @@
 }
 
 @media (max-width: 600px) {
-  .App .container {
+  .Webcam .container {
     width: 450px;
     height: 600px;
     border-radius: 15px;
@@ -14,7 +14,7 @@
   margin-bottom: 80px;
 }
 
-.App .container {
+.Webcam .container {
   margin: 0 auto;
   padding-top: 110px;
   width: 1230px;

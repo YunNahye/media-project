@@ -1,52 +1,21 @@
-import './style/App.css';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './Navigation';
-import RecycleLabel from './RecycleLabel';
-import Cam from './cv/templates';
-import io from "socket.io-client";
-
-let endPoint = "http://localhost:5000";
-let socket = io.connect(`${endPoint}`)
+import Home from './Home';
+import Webcam from './Webcam';
+import Map from './Map';
 
 function App() {
-  const [labelColor, setLabelColor] = useState(['default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default']);
-
-  useEffect(() => {
-    getMessages();
-  }, labelColor);
-
-  const getMessages = () => {
-    socket.on("message", msg => {
-      const newLabelColor = ['default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default', 'default'];
-      newLabelColor[msg] = 'on-focus';
-      setLabelColor(newLabelColor);
-    });
-  }
-
   return (
-    <div className="App">
+    <div>
       <Navigation></Navigation>
-      <div className="container">
-        <div className="webcam-box">
-          <Cam/>
-        </div>
-        <div className="contents">
-          <div className="label-box">
-            <RecycleLabel color={labelColor[0]}>plastic</RecycleLabel>
-            <RecycleLabel color={labelColor[1]}>brown_glass</RecycleLabel>
-            <RecycleLabel color={labelColor[2]}>can</RecycleLabel>
-            <RecycleLabel color={labelColor[3]}>cloth</RecycleLabel>
-            <RecycleLabel color={labelColor[4]}>green_glass</RecycleLabel>
-            <RecycleLabel color={labelColor[5]}>newspaper</RecycleLabel>
-            <RecycleLabel color={labelColor[6]}>paperbox</RecycleLabel>
-            <RecycleLabel color={labelColor[7]}>paperpack</RecycleLabel>
-            <RecycleLabel color={labelColor[8]}>styrofoam</RecycleLabel>
-            <RecycleLabel color={labelColor[9]}>vinyl</RecycleLabel>
-            <RecycleLabel color={labelColor[10]}>white_glass</RecycleLabel>
-            <RecycleLabel color={labelColor[11]}>else</RecycleLabel>
-          </div>
-        </div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/webcam" element={<Webcam />}/>
+          <Route path="/map" element={<Map />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

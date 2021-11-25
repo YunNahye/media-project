@@ -17,11 +17,6 @@ def handleMessage(msg):
   send(msg, broadcast=True)
   return None
 
-# src = 0
-# if platform.system() == 'Windows':
-#     captrue = cv2.VideoCapture(src, cv2.CAP_DSHOW)
-# else:
-#     captrue = cv2.VideoCapture(src)
 capture = cv2.VideoCapture(0)
 
 @app.route('/')
@@ -37,8 +32,6 @@ def load_checkpoint(path):
     return model.eval()
 
 def webcam():
-  # while capture.isOpened():
-
       ret, frame = capture.read()
       region = frame[100:324, 100:324]
       pil_image = Image.fromarray(region, mode="RGB")
@@ -52,13 +45,6 @@ def webcam():
       socketIo.emit("message", prediction)
       cv2.putText(frame, text, (100, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
       cv2.rectangle(frame, (100, 100), (324, 324), (255, 0, 0), 2)
-      # if grabbed:
-      #     cv2.imshow('Wandlab Camera Window', frame)
-
-      #     key = cv2.waitKey(1) & 0xFF
-      #     # ESC키 끄기
-      #     if (key == 27):
-      #         break
       ret, jpeg = cv2.imencode('.jpg', frame)
       return jpeg.tobytes()
 
@@ -72,8 +58,6 @@ def gen():
 def video_feed():
     return Response(gen(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
-# captrue.release()
-# cv2.destroyAllWindows()
 
 if __name__ == '__main__':
   train_transforms = transforms.Compose([transforms.Resize(255),
@@ -83,11 +67,9 @@ if __name__ == '__main__':
                                            transforms.ToTensor(),
                                            transforms.Normalize([0.485, 0.456, 0.406],
                                                                 [0.229, 0.224, 0.225])])
-  loaded_model = load_checkpoint('13.pth')
+  loaded_model = load_checkpoint('C:/Users/zuu03/media_project/media-project/src/cv/13.pth')
 
   classes = ['plastic', 'brown_glass', 'can', 'cloth', 'green_glass', 'newspaper', 'paperbox', 'paperpack',
                 'styrofoam', 'vinyl', 'white_glass']
 
-  capture.set(cv2.CAP_PROP_FRAME_WIDTH, 550)
-  capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 600)
   socketIo.run(app, debug=True)

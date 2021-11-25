@@ -32,8 +32,9 @@ h1 {
 .webcam-box {
   float: left;
   width: 550px;
-  height: 600px;
+  height: 480px;
   background-color: lightgray;
+  overflow: hidden;
 }
 
 .contents {

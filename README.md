@@ -3,6 +3,7 @@
 #### video 서버 열린 후 react 실행 (새 터미널에서)
 ```
 npm install
+npm install react-router-dom
 npm install socket.io-client
 npm start
 ```

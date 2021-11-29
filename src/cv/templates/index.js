@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 
-const Cam = () => {
-  return (
-    <div>
-    <img
-      src="http://localhost:5000/video_feed"
-      alt="Video"
-    />
-    </div>
-  );
+function Cam({ type }) {
+  const typeSrc = `http://localhost:5000/${ type }`;
+  if (type == "rhkdry") {
+    return (
+      <div>
+      <iframe
+        src={typeSrc}
+      />
+      </div>
+    );
+  }
 };
 
 export default Cam;

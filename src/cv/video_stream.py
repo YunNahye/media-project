@@ -59,6 +59,10 @@ def video_feed():
     return Response(gen(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
+@app.route('/rhkdry')
+def rhkdry():
+  return render_template('광교1동.html')
+
 if __name__ == '__main__':
   train_transforms = transforms.Compose([transforms.Resize(255),
                                            transforms.RandomRotation(30),

@@ -11,7 +11,7 @@ function App() {
       <Navigation></Navigation>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="/" element={<Webcam />}/>
           <Route path="/webcam" element={<Webcam />}/>
           <Route path="/map" element={<Map />}/>
         </Routes>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e4303d7a7e3d446e9657ad7434fa0e45 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e4303d7a7e3d446e9657ad7434fa0e45" ></div>
+        
+</body>
+<script>    
+    
+            var map_e4303d7a7e3d446e9657ad7434fa0e45 = L.map(
+                "map_e4303d7a7e3d446e9657ad7434fa0e45",
+                {
+                    center: [37.28619291999999, 127.03133411000002],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c929460da754bbda707c1588e0b0af4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+            var marker_10affc04dd334c5fa359c9e31f0c980f = L.marker(
+                [37.286778600000005, 127.02901709999999],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_094b53bc28aa4ffbaabf86fda7c19db4 = L.popup({"maxWidth": 600});
+
+        
+            var html_e4396f1a793c4794b98689afe49ba2ec = $(`<div id="html_e4396f1a793c4794b98689afe49ba2ec" style="width: 100.0%; height: 100.0%;">21세기할인마트</div>`)[0];
+            popup_094b53bc28aa4ffbaabf86fda7c19db4.setContent(html_e4396f1a793c4794b98689afe49ba2ec);
+        
+
+        marker_10affc04dd334c5fa359c9e31f0c980f.bindPopup(popup_094b53bc28aa4ffbaabf86fda7c19db4)
+        ;
+
+        
+    
+    
+            var marker_1e075d3f83454012a49006d9d93edb1d = L.marker(
+                [37.2840864, 127.0334328],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_cded02e0b02d4e5eb7b5457d4ed963d8 = L.popup({"maxWidth": 600});
+
+        
+            var html_6adeb82125564e99a2901b53a55da1a2 = $(`<div id="html_6adeb82125564e99a2901b53a55da1a2" style="width: 100.0%; height: 100.0%;">CU(우만본점)</div>`)[0];
+            popup_cded02e0b02d4e5eb7b5457d4ed963d8.setContent(html_6adeb82125564e99a2901b53a55da1a2);
+        
+
+        marker_1e075d3f83454012a49006d9d93edb1d.bindPopup(popup_cded02e0b02d4e5eb7b5457d4ed963d8)
+        ;
+
+        
+    
+    
+            var marker_b99a387dddc447a596b8cbb84e83e5d3 = L.marker(
+                [37.2873084, 127.02986570000002],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_76a6b3d3869f43c899de4fd757746c6f = L.popup({"maxWidth": 600});
+
+        
+            var html_2b13ced1333c48f89d2f817428e362c4 = $(`<div id="html_2b13ced1333c48f89d2f817428e362c4" style="width: 100.0%; height: 100.0%;">CU(우만삼익점)</div>`)[0];
+            popup_76a6b3d3869f43c899de4fd757746c6f.setContent(html_2b13ced1333c48f89d2f817428e362c4);
+        
+
+        marker_b99a387dddc447a596b8cbb84e83e5d3.bindPopup(popup_76a6b3d3869f43c899de4fd757746c6f)
+        ;
+
+        
+    
+    
+            var marker_9b10d74537404b62ba934b9026f69d08 = L.marker(
+                [37.2839827, 127.03107050000001],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_90bef1ac009d45b693725c41f791a277 = L.popup({"maxWidth": 600});
+
+        
+            var html_1cf197783f8645a48cd28fbc8634bf16 = $(`<div id="html_1cf197783f8645a48cd28fbc8634bf16" style="width: 100.0%; height: 100.0%;">CU(우만희망점)</div>`)[0];
+            popup_90bef1ac009d45b693725c41f791a277.setContent(html_1cf197783f8645a48cd28fbc8634bf16);
+        
+
+        marker_9b10d74537404b62ba934b9026f69d08.bindPopup(popup_90bef1ac009d45b693725c41f791a277)
+        ;
+
+        
+    
+    
+            var marker_0aff9e4fc85b4f2bae675a50b242aa5b = L.marker(
+                [37.2878748, 127.0289094],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_363cbf3c42bb4b7baa75d0d486f5c126 = L.popup({"maxWidth": 600});
+
+        
+            var html_e4dbc9f8a2704a72bc08daa7ad90c27a = $(`<div id="html_e4dbc9f8a2704a72bc08daa7ad90c27a" style="width: 100.0%; height: 100.0%;">gs25 (우만센트럴점)</div>`)[0];
+            popup_363cbf3c42bb4b7baa75d0d486f5c126.setContent(html_e4dbc9f8a2704a72bc08daa7ad90c27a);
+        
+
+        marker_0aff9e4fc85b4f2bae675a50b242aa5b.bindPopup(popup_363cbf3c42bb4b7baa75d0d486f5c126)
+        ;
+
+        
+    
+    
+            var marker_a00428d1570c4a8eb2564b90c98a9ff5 = L.marker(
+                [37.283241499999995, 127.0337348],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_a16f3ff217b047298070d3605454fb11 = L.popup({"maxWidth": 600});
+
+        
+            var html_5f835782b67c4ef8af0d9cfb48c3f84b = $(`<div id="html_5f835782b67c4ef8af0d9cfb48c3f84b" style="width: 100.0%; height: 100.0%;">GS25(수원우만점)</div>`)[0];
+            popup_a16f3ff217b047298070d3605454fb11.setContent(html_5f835782b67c4ef8af0d9cfb48c3f84b);
+        
+
+        marker_a00428d1570c4a8eb2564b90c98a9ff5.bindPopup(popup_a16f3ff217b047298070d3605454fb11)
+        ;
+
+        
+    
+    
+            var marker_18bfa506d040411fb4fc32140293529a = L.marker(
+                [37.2856485, 127.0315632],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_b6fe6e44ab51451bbb9cd37ab57a7149 = L.popup({"maxWidth": 600});
+
+        
+            var html_de075cf9cebc4fe79c925c9fbfdb37b0 = $(`<div id="html_de075cf9cebc4fe79c925c9fbfdb37b0" style="width: 100.0%; height: 100.0%;">GS25(우만싱싱점)</div>`)[0];
+            popup_b6fe6e44ab51451bbb9cd37ab57a7149.setContent(html_de075cf9cebc4fe79c925c9fbfdb37b0);
+        
+
+        marker_18bfa506d040411fb4fc32140293529a.bindPopup(popup_b6fe6e44ab51451bbb9cd37ab57a7149)
+        ;
+
+        
+    
+    
+            var marker_7b380ee98a7b42b68f5f24cad9480f64 = L.marker(
+                [37.2790088, 127.03135139999999],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_46ade41099574dd287d30649b96ad803 = L.popup({"maxWidth": 600});
+
+        
+            var html_331bfe50d636409c9af2d78d72128c00 = $(`<div id="html_331bfe50d636409c9af2d78d72128c00" style="width: 100.0%; height: 100.0%;">가락동수원공판장</div>`)[0];
+            popup_46ade41099574dd287d30649b96ad803.setContent(html_331bfe50d636409c9af2d78d72128c00);
+        
+
+        marker_7b380ee98a7b42b68f5f24cad9480f64.bindPopup(popup_46ade41099574dd287d30649b96ad803)
+        ;
+
+        
+    
+    
+            var marker_81eecfe663d146209aacfefeca10b312 = L.marker(
+                [37.289178299999996, 127.0284074],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_40620fea9fa74e94bfe19bb3cb3a0b28 = L.popup({"maxWidth": 600});
+
+        
+            var html_20b436a5583b4eafa1953dfd17da2762 = $(`<div id="html_20b436a5583b4eafa1953dfd17da2762" style="width: 100.0%; height: 100.0%;">귀뚜라미보일러철물</div>`)[0];
+            popup_40620fea9fa74e94bfe19bb3cb3a0b28.setContent(html_20b436a5583b4eafa1953dfd17da2762);
+        
+
+        marker_81eecfe663d146209aacfefeca10b312.bindPopup(popup_40620fea9fa74e94bfe19bb3cb3a0b28)
+        ;
+
+        
+    
+    
+            var marker_d3d35209c76f4b11a545185c1f816994 = L.marker(
+                [37.2860528, 127.03037659999998],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_e2dbb2cd83bd4be78e6433b8963b3882 = L.popup({"maxWidth": 600});
+
+        
+            var html_c22a9ccafd534b82affc02b7a1b02204 = $(`<div id="html_c22a9ccafd534b82affc02b7a1b02204" style="width: 100.0%; height: 100.0%;">남양슈퍼</div>`)[0];
+            popup_e2dbb2cd83bd4be78e6433b8963b3882.setContent(html_c22a9ccafd534b82affc02b7a1b02204);
+        
+
+        marker_d3d35209c76f4b11a545185c1f816994.bindPopup(popup_e2dbb2cd83bd4be78e6433b8963b3882)
+        ;
+
+        
+    
+    
+            var marker_b7fdc8bb5c89411f99dbc73402585a3a = L.marker(
+                [37.2823558, 127.0302711],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_4b73b26d01ec4be08b614a3d76ca32d9 = L.popup({"maxWidth": 600});
+
+        
+            var html_7e50fcb1ce3b46ccbd5bc3d15788b0fc = $(`<div id="html_7e50fcb1ce3b46ccbd5bc3d15788b0fc" style="width: 100.0%; height: 100.0%;">동광슈퍼</div>`)[0];
+            popup_4b73b26d01ec4be08b614a3d76ca32d9.setContent(html_7e50fcb1ce3b46ccbd5bc3d15788b0fc);
+        
+
+        marker_b7fdc8bb5c89411f99dbc73402585a3a.bindPopup(popup_4b73b26d01ec4be08b614a3d76ca32d9)
+        ;
+
+        
+    
+    
+            var marker_77dfcb4be8174f5a945d9b57f26a1584 = L.marker(
+                [37.285839200000005, 127.0340195],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_58e140551a0a487bb958ebaff239518e = L.popup({"maxWidth": 600});
+
+        
+            var html_700129999104493cad289bcaf27e2405 = $(`<div id="html_700129999104493cad289bcaf27e2405" style="width: 100.0%; height: 100.0%;">동원슈퍼</div>`)[0];
+            popup_58e140551a0a487bb958ebaff239518e.setContent(html_700129999104493cad289bcaf27e2405);
+        
+
+        marker_77dfcb4be8174f5a945d9b57f26a1584.bindPopup(popup_58e140551a0a487bb958ebaff239518e)
+        ;
+
+        
+    
+    
+            var marker_8c1b607b06de44efa6876a88770f280d = L.marker(
+                [37.2832344, 127.0307216],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_2c2ef360c20b472ca3500f2da0b68728 = L.popup({"maxWidth": 600});
+
+        
+            var html_216a8f7687e84fb89c1e2895eb119bb8 = $(`<div id="html_216a8f7687e84fb89c1e2895eb119bb8" style="width: 100.0%; height: 100.0%;">로컬힘마트</div>`)[0];
+            popup_2c2ef360c20b472ca3500f2da0b68728.setContent(html_216a8f7687e84fb89c1e2895eb119bb8);
+        
+
+        marker_8c1b607b06de44efa6876a88770f280d.bindPopup(popup_2c2ef360c20b472ca3500f2da0b68728)
+        ;
+
+        
+    
+    
+            var marker_4dda88a9b3a8426997ce894f7a3330ea = L.marker(
+                [37.285104600000004, 127.02899679999999],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_0812a72d1c1a4422b90c581ae8a11f59 = L.popup({"maxWidth": 600});
+
+        
+            var html_1aad1ad8fd2941ef9db1c997ee0dabf5 = $(`<div id="html_1aad1ad8fd2941ef9db1c997ee0dabf5" style="width: 100.0%; height: 100.0%;">롯데마켓999(우만1점)</div>`)[0];
+            popup_0812a72d1c1a4422b90c581ae8a11f59.setContent(html_1aad1ad8fd2941ef9db1c997ee0dabf5);
+        
+
+        marker_4dda88a9b3a8426997ce894f7a3330ea.bindPopup(popup_0812a72d1c1a4422b90c581ae8a11f59)
+        ;
+
+        
+    
+    
+            var marker_4e38a2580c3e4454b833116b630822da = L.marker(
+                [37.2800125, 127.0321558],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_362239ad59ac4af8bde1d808996b172f = L.popup({"maxWidth": 600});
+
+        
+            var html_ce8f751d09fb47e3a00859ac2151cea6 = $(`<div id="html_ce8f751d09fb47e3a00859ac2151cea6" style="width: 100.0%; height: 100.0%;">롯데슈퍼(우만점)</div>`)[0];
+            popup_362239ad59ac4af8bde1d808996b172f.setContent(html_ce8f751d09fb47e3a00859ac2151cea6);
+        
+
+        marker_4e38a2580c3e4454b833116b630822da.bindPopup(popup_362239ad59ac4af8bde1d808996b172f)
+        ;
+
+        
+    
+    
+            var marker_a7a49e2067fc4a2aa06a2a9986de2cc8 = L.marker(
+                [37.288804, 127.0299317],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_6994b237dbad4c45b4535185496cc428 = L.popup({"maxWidth": 600});
+
+        
+            var html_3353ac4e961d461dabd13297c3059c44 = $(`<div id="html_3353ac4e961d461dabd13297c3059c44" style="width: 100.0%; height: 100.0%;">무지개슈퍼</div>`)[0];
+            popup_6994b237dbad4c45b4535185496cc428.setContent(html_3353ac4e961d461dabd13297c3059c44);
+        
+
+        marker_a7a49e2067fc4a2aa06a2a9986de2cc8.bindPopup(popup_6994b237dbad4c45b4535185496cc428)
+        ;
+
+        
+    
+    
+            var marker_9dd18c9a227948dc8949615cc5ec8066 = L.marker(
+                [37.2877924, 127.030507],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_27e3fde716f945cf932297ba5dc38393 = L.popup({"maxWidth": 600});
+
+        
+            var html_17423917cd504cf19ac9b7fd0cd58888 = $(`<div id="html_17423917cd504cf19ac9b7fd0cd58888" style="width: 100.0%; height: 100.0%;">신세계유통(어머니)</div>`)[0];
+            popup_27e3fde716f945cf932297ba5dc38393.setContent(html_17423917cd504cf19ac9b7fd0cd58888);
+        
+
+        marker_9dd18c9a227948dc8949615cc5ec8066.bindPopup(popup_27e3fde716f945cf932297ba5dc38393)
+        ;
+
+        
+    
+    
+            var marker_b7d2fe009227434c9ee775ce27f70c21 = L.marker(
+                [37.2874721, 127.0326717],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_28e1d772e9c0494ca9797c8a7b363f1a = L.popup({"maxWidth": 600});
+
+        
+            var html_90993214cc70405cb171ec4e7f0eefe5 = $(`<div id="html_90993214cc70405cb171ec4e7f0eefe5" style="width: 100.0%; height: 100.0%;">씨스페이스</div>`)[0];
+            popup_28e1d772e9c0494ca9797c8a7b363f1a.setContent(html_90993214cc70405cb171ec4e7f0eefe5);
+        
+
+        marker_b7d2fe009227434c9ee775ce27f70c21.bindPopup(popup_28e1d772e9c0494ca9797c8a7b363f1a)
+        ;
+
+        
+    
+    
+            var marker_3e607277e27945f792c1fc980b23bffb = L.marker(
+                [37.289047700000005, 127.0287672],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_ea7ae58a064b43bf81b7136d911b9e7b = L.popup({"maxWidth": 600});
+
+        
+            var html_e5156154a7194085b0dd5e3247a50477 = $(`<div id="html_e5156154a7194085b0dd5e3247a50477" style="width: 100.0%; height: 100.0%;">엠마트</div>`)[0];
+            popup_ea7ae58a064b43bf81b7136d911b9e7b.setContent(html_e5156154a7194085b0dd5e3247a50477);
+        
+
+        marker_3e607277e27945f792c1fc980b23bffb.bindPopup(popup_ea7ae58a064b43bf81b7136d911b9e7b)
+        ;
+
+        
+    
+    
+            var marker_0808c1b089924c7d9086dd6e138fa19d = L.marker(
+                [37.2796543, 127.03206940000001],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_d627ba86b5fa40e2ac3046e235b427cb = L.popup({"maxWidth": 600});
+
+        
+            var html_51a556abb38f4b6ab1103ca52db247fd = $(`<div id="html_51a556abb38f4b6ab1103ca52db247fd" style="width: 100.0%; height: 100.0%;">우리생협</div>`)[0];
+            popup_d627ba86b5fa40e2ac3046e235b427cb.setContent(html_51a556abb38f4b6ab1103ca52db247fd);
+        
+
+        marker_0808c1b089924c7d9086dd6e138fa19d.bindPopup(popup_d627ba86b5fa40e2ac3046e235b427cb)
+        ;
+
+        
+    
+    
+            var marker_7aed448d92d8442d8e3f9457e787b0a4 = L.marker(
+                [37.285328, 127.03510390000001],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_29ea99de9b4d4f139883459c9f164d57 = L.popup({"maxWidth": 600});
+
+        
+            var html_91d71ef3808848868de2ff418beb03e1 = $(`<div id="html_91d71ef3808848868de2ff418beb03e1" style="width: 100.0%; height: 100.0%;">월드컵</div>`)[0];
+            popup_29ea99de9b4d4f139883459c9f164d57.setContent(html_91d71ef3808848868de2ff418beb03e1);
+        
+
+        marker_7aed448d92d8442d8e3f9457e787b0a4.bindPopup(popup_29ea99de9b4d4f139883459c9f164d57)
+        ;
+
+        
+    
+    
+            var marker_3d56d46921564af48ab2757be66a3152 = L.marker(
+                [37.285635299999996, 127.03466350000001],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_ca4ff4f9f7a74d64a546029ca62c6330 = L.popup({"maxWidth": 600});
+
+        
+            var html_f6042c8f82844230b3aba670adec1224 = $(`<div id="html_f6042c8f82844230b3aba670adec1224" style="width: 100.0%; height: 100.0%;">월드컵식자재마트</div>`)[0];
+            popup_ca4ff4f9f7a74d64a546029ca62c6330.setContent(html_f6042c8f82844230b3aba670adec1224);
+        
+
+        marker_3d56d46921564af48ab2757be66a3152.bindPopup(popup_ca4ff4f9f7a74d64a546029ca62c6330)
+        ;
+
+        
+    
+    
+            var marker_3599c8ed15fc46f59c3146beefd4faf4 = L.marker(
+                [37.28448970000001, 127.0322642],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_68de06b43c9b4c72ad0f6a525dfaa85b = L.popup({"maxWidth": 600});
+
+        
+            var html_0e913c6e1841482a88a409998404e74f = $(`<div id="html_0e913c6e1841482a88a409998404e74f" style="width: 100.0%; height: 100.0%;">제일슈퍼</div>`)[0];
+            popup_68de06b43c9b4c72ad0f6a525dfaa85b.setContent(html_0e913c6e1841482a88a409998404e74f);
+        
+
+        marker_3599c8ed15fc46f59c3146beefd4faf4.bindPopup(popup_68de06b43c9b4c72ad0f6a525dfaa85b)
+        ;
+
+        
+    
+    
+            var marker_27f65f3c28174d3c99c5b300cb54b26e = L.marker(
+                [37.2920515, 127.03493950000001],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_417dc6ca249344399f6484f454e71aba = L.popup({"maxWidth": 600});
+
+        
+            var html_db28f4d42f864488ae28ba2d4fe70373 = $(`<div id="html_db28f4d42f864488ae28ba2d4fe70373" style="width: 100.0%; height: 100.0%;">주공마트</div>`)[0];
+            popup_417dc6ca249344399f6484f454e71aba.setContent(html_db28f4d42f864488ae28ba2d4fe70373);
+        
+
+        marker_27f65f3c28174d3c99c5b300cb54b26e.bindPopup(popup_417dc6ca249344399f6484f454e71aba)
+        ;
+
+        
+    
+    
+            var marker_0350fd090ace49e183bf43875907a51d = L.marker(
+                [37.2920515, 127.03493950000001],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_75e8b77de5a34341aed1520fad8f2504 = L.popup({"maxWidth": 600});
+
+        
+            var html_4ac54ee72a804748b4840b167e1e491b = $(`<div id="html_4ac54ee72a804748b4840b167e1e491b" style="width: 100.0%; height: 100.0%;">주공슈퍼</div>`)[0];
+            popup_75e8b77de5a34341aed1520fad8f2504.setContent(html_4ac54ee72a804748b4840b167e1e491b);
+        
+
+        marker_0350fd090ace49e183bf43875907a51d.bindPopup(popup_75e8b77de5a34341aed1520fad8f2504)
+        ;
+
+        
+    
+    
+            var marker_0a14b673baf64f37830dfff52a2bcf25 = L.marker(
+                [37.291737899999994, 127.030353],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_8cfcc33aecce460292dc851be215cfb5 = L.popup({"maxWidth": 600});
+
+        
+            var html_0eb534c034604b68a1f699d973843e3f = $(`<div id="html_0eb534c034604b68a1f699d973843e3f" style="width: 100.0%; height: 100.0%;">주공정육점</div>`)[0];
+            popup_8cfcc33aecce460292dc851be215cfb5.setContent(html_0eb534c034604b68a1f699d973843e3f);
+        
+
+        marker_0a14b673baf64f37830dfff52a2bcf25.bindPopup(popup_8cfcc33aecce460292dc851be215cfb5)
+        ;
+
+        
+    
+    
+            var marker_5816699fc2eb416b8499ef37f16d9b0b = L.marker(
+                [37.2862144, 127.03246429999999],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_f9631860818b4e26a786984e4d479dcd = L.popup({"maxWidth": 600});
+
+        
+            var html_4f95c533142e46e0ac7daa876de60b71 = $(`<div id="html_4f95c533142e46e0ac7daa876de60b71" style="width: 100.0%; height: 100.0%;">진흥하이퍼</div>`)[0];
+            popup_f9631860818b4e26a786984e4d479dcd.setContent(html_4f95c533142e46e0ac7daa876de60b71);
+        
+
+        marker_5816699fc2eb416b8499ef37f16d9b0b.bindPopup(popup_f9631860818b4e26a786984e4d479dcd)
+        ;
+
+        
+    
+    
+            var marker_10f073674ad5484e83ee1078ccae33a5 = L.marker(
+                [37.2896583, 127.02595290000001],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_f50e26512686477dbb4396eaff7b0057 = L.popup({"maxWidth": 600});
+
+        
+            var html_abd828dc4bc54513b098c463b83944d8 = $(`<div id="html_abd828dc4bc54513b098c463b83944d8" style="width: 100.0%; height: 100.0%;">창룡마트</div>`)[0];
+            popup_f50e26512686477dbb4396eaff7b0057.setContent(html_abd828dc4bc54513b098c463b83944d8);
+        
+
+        marker_10f073674ad5484e83ee1078ccae33a5.bindPopup(popup_f50e26512686477dbb4396eaff7b0057)
+        ;
+
+        
+    
+    
+            var marker_ab676054010b49e39b6243fbea5ec6a4 = L.marker(
+                [37.2867237, 127.0337112],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_e103ba83709847eebd8e536bbd6d3aab = L.popup({"maxWidth": 600});
+
+        
+            var html_c1cfaed7597944de8c76cb68623dba2b = $(`<div id="html_c1cfaed7597944de8c76cb68623dba2b" style="width: 100.0%; height: 100.0%;">편의점사랑(우만1)</div>`)[0];
+            popup_e103ba83709847eebd8e536bbd6d3aab.setContent(html_c1cfaed7597944de8c76cb68623dba2b);
+        
+
+        marker_ab676054010b49e39b6243fbea5ec6a4.bindPopup(popup_e103ba83709847eebd8e536bbd6d3aab)
+        ;
+
+        
+    
+    
+            var marker_1c455f00989244f9b310be0f73635c8c = L.marker(
+                [37.2894195, 127.0277906],
+                {}
+            ).addTo(map_e4303d7a7e3d446e9657ad7434fa0e45);
+        
+    
+        var popup_d94e7f602ebd4f0da6af42d30915ce77 = L.popup({"maxWidth": 600});
+
+        
+            var html_e1267ed4e2e44c4ca9ec0d6352968f4a = $(`<div id="html_e1267ed4e2e44c4ca9ec0d6352968f4a" style="width: 100.0%; height: 100.0%;">행복한D.C아울렛</div>`)[0];
+            popup_d94e7f602ebd4f0da6af42d30915ce77.setContent(html_e1267ed4e2e44c4ca9ec0d6352968f4a);
+        
+
+        marker_1c455f00989244f9b310be0f73635c8c.bindPopup(popup_d94e7f602ebd4f0da6af42d30915ce77)
+        ;
+
+        
+    
+</script>

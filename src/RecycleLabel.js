@@ -1,10 +1,10 @@
 import './style/RecycleLabel.css';
 
-function RecycleLabel({ children, color }) {
+function RecycleLabel({ children, color, onClick }) {
   const classNames = `label ${color}`;
 
   return (
-    <div className={classNames}>
+    <div className={classNames} onClick={onClick}>
       {children}
     </div>
   );

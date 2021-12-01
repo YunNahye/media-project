@@ -5,9 +5,14 @@ function Cam({ type }) {
   if (type == "rhkdry") {
     return (
       <div>
-      <iframe
-        src={typeSrc}
-      />
+        <img src={typeSrc} alt="Video" />
+      </div>
+    );
+  }
+  else {
+    return (
+      <div>
+        <iframe src={typeSrc}></iframe>
       </div>
     );
   }

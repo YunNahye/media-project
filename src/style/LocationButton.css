@@ -1,0 +1,25 @@
+.location-button {
+  display: inline-block;
+  width: 90px;
+  line-height: 40px;
+  vertical-align: middle;
+  margin: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.default {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 0px 3px 4px 0px gray;
+}
+
+.on-focus {
+  /* background-color: black;
+  color: white; */
+  background-color: rgb(231, 231, 231);
+  color: black;
+  border: 1px solid black;
+  box-shadow: 0px 1px 2px 0px gray;
+}

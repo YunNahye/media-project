@@ -59,9 +59,21 @@ def video_feed():
     return Response(gen(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/rhkdry')
-def rhkdry():
+@app.route('/godeung')
+def godeung():
+  return render_template('고등동.html')
+
+@app.route('/gwanggyo1')
+def gwanggyo1():
   return render_template('광교1동.html')
+
+@app.route('/gwanggyo2')
+def gwanggyo2():
+  return render_template('광교2동.html')
+
+@app.route('/mangpo1')
+def mangpo1():
+  return render_template('망포1동.html')
 
 if __name__ == '__main__':
   train_transforms = transforms.Compose([transforms.Resize(255),

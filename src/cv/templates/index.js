@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Cam({ type }) {
   const typeSrc = `http://localhost:5000/${ type }`;
-  if (type == "rhkdry") {
+  if (type == "cam") {
     return (
       <div>
         <img src={typeSrc} alt="Video" />

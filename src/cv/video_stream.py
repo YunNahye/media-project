@@ -54,7 +54,7 @@ def gen():
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
-@app.route('/video_feed')
+@app.route('/cam')
 def video_feed():
     return Response(gen(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
@@ -74,6 +74,74 @@ def gwanggyo2():
 @app.route('/mangpo1')
 def mangpo1():
   return render_template('망포1동.html')
+
+@app.route('/mangpo2')
+def mangpo2():
+  return render_template('망포2동.html')
+
+@app.route('/maegyo')
+def maegyo():
+  return render_template('매교동.html')
+
+@app.route('/maetan1')
+def maetan1():
+  return render_template('매탄1동.html')
+
+@app.route('/maetan2')
+def maetan2():
+  return render_template('매탄2동.html')
+
+@app.route('/maetan3')
+def maetan3():
+  return render_template('매탄3동.html')
+
+@app.route('/maetan4')
+def maetan4():
+  return render_template('매탄4동.html')
+
+@app.route('/yeongtong1')
+def yeongtong1():
+  return render_template('영통1동.html')
+
+@app.route('/yeongtong2')
+def yeongtong2():
+  return render_template('영통2동.html')
+
+@app.route('/yeongtong3')
+def yeongtong3():
+  return render_template('영통3동.html')
+
+@app.route('/uman1')
+def uman1():
+  return render_template('우만1동.html')
+
+@app.route('/uman2')
+def uman2():
+  return render_template('우만2동.html')
+
+@app.route('/woncheon')
+def woncheon():
+  return render_template('원천동.html')
+
+@app.route('/ingye')
+def ingye():
+  return render_template('인계동.html')
+
+@app.route('/ji')
+def ji():
+  return render_template('지동.html')
+
+@app.route('/haenggung')
+def haenggung():
+  return render_template('행궁동.html')
+
+@app.route('/hwaseo1')
+def hwaseo1():
+  return render_template('화서1동.html')
+
+@app.route('/hwaseo2')
+def hwaseo2():
+  return render_template('화서2동.html')
 
 if __name__ == '__main__':
   train_transforms = transforms.Compose([transforms.Resize(255),

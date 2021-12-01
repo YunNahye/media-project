@@ -26,7 +26,7 @@ function Webcam() {
     <div className="Webcam">
       <div className="container">
         <div className="webcam-box">
-          <Cam/>
+          <Cam type="cam"/>
         </div>
         <div className="contents">
           <div className="label-box">

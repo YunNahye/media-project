@@ -47,14 +47,14 @@ function Map() {
             <LocationButton color={buttonColor[10]} onClick={(e) => changeMap(e, "yeongtong1", 10)}>영통1동</LocationButton>
             <LocationButton color={buttonColor[11]} onClick={(e) => changeMap(e, "yeongtong2", 11)}>영통2동</LocationButton>
             <LocationButton color={buttonColor[12]} onClick={(e) => changeMap(e, "yeongtong3", 12)}>영통3동</LocationButton>
-            <LocationButton color={buttonColor[13]} onClick={(e) => changeMap(e, "gwanggyo1", 13)}>우만1동</LocationButton>
-            <LocationButton color={buttonColor[14]} onClick={(e) => changeMap(e, "gwanggyo1", 14)}>우만2동</LocationButton>
-            <LocationButton color={buttonColor[15]} onClick={(e) => changeMap(e, "gwanggyo1", 15)}>원천동</LocationButton>
-            <LocationButton color={buttonColor[16]} onClick={(e) => changeMap(e, "gwanggyo1", 16)}>인계동</LocationButton>
-            <LocationButton color={buttonColor[17]} onClick={(e) => changeMap(e, "gwanggyo1", 17)}>지동</LocationButton>
-            <LocationButton color={buttonColor[18]} onClick={(e) => changeMap(e, "gwanggyo1", 18)}>행궁동</LocationButton>
-            <LocationButton color={buttonColor[19]} onClick={(e) => changeMap(e, "gwanggyo1", 19)}>화서1동</LocationButton>
-            <LocationButton color={buttonColor[20]} onClick={(e) => changeMap(e, "gwanggyo1", 20)}>화서2동</LocationButton>
+            <LocationButton color={buttonColor[13]} onClick={(e) => changeMap(e, "uman1", 13)}>우만1동</LocationButton>
+            <LocationButton color={buttonColor[14]} onClick={(e) => changeMap(e, "uman2", 14)}>우만2동</LocationButton>
+            <LocationButton color={buttonColor[15]} onClick={(e) => changeMap(e, "woncheon", 15)}>원천동</LocationButton>
+            <LocationButton color={buttonColor[16]} onClick={(e) => changeMap(e, "ingye", 16)}>인계동</LocationButton>
+            <LocationButton color={buttonColor[17]} onClick={(e) => changeMap(e, "ji", 17)}>지동</LocationButton>
+            <LocationButton color={buttonColor[18]} onClick={(e) => changeMap(e, "haenggung", 18)}>행궁동</LocationButton>
+            <LocationButton color={buttonColor[19]} onClick={(e) => changeMap(e, "hwaseo1", 19)}>화서1동</LocationButton>
+            <LocationButton color={buttonColor[20]} onClick={(e) => changeMap(e, "hwaseo2", 20)}>화서2동</LocationButton>
           </div>
           <button onClick={moveSlide}>
             <img className="arrow" alt="down_arrow" src={down} />

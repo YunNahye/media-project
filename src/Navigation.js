@@ -9,8 +9,8 @@ function Navigation(){
         <span>DDOK-DDOK</span>
       </div>
       <div className="map-button">
-        <a href="/map"><img className="marker" src={mapMarker} /></a>
-        <a href="/"><img className="marker" src={camera} /></a>
+        <a href="/map"><img className="marker" src={mapMarker} /><span className="marker-name">Map</span></a>
+        <a href="/"><img className="marker" src={camera} /><span className="marker-name">Cam</span></a>
       </div>
     </div>
   );

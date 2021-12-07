@@ -25,40 +25,38 @@ button {
   border-radius: 5px;
   cursor: pointer;
   background-color: white;
-  color: black;
-  border: 1px solid black;
+  color: rgb(172, 226, 88);
+  border: 1px solid rgb(172, 226, 88);
+}
+
+.slide-box {
+  overflow: hidden;
 }
 
 .button-box {
   width: 200px;
   height: 560px;
-  overflow: hidden;
 }
 
 .button-box2 {
-  margin-top: -560px;
   width: 200px;
   height: 560px;
-  overflow: hidden;
+  transform: translateY(-560px);
 }
 
 .map-iframe {
   float: left;
+  padding-top: 30px;
   width: 1100px;
   height: 100%;
 }
 
-.map-title {
-  text-align: left;
-  margin: 10px 0;
-}
-
 iframe {
   width: 1100px;
-  height: 600px;
+  height: 610px;
 }
 
 img {
   width: 800px;
-  height: 600px;
+  height: 610px;
 }

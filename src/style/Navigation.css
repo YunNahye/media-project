@@ -12,11 +12,12 @@
 }
 
 .logo {
+  font-family: 'Baloo Bhaijaan 2', cursive;
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 12px;
   margin-left: 55px;
   width: 150px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -28,6 +29,8 @@ a {
 }
 
 .map-button {
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  font-weight: 600;
   float: right;
   height: 60px;
   line-height: 60px;

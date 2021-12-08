@@ -26,10 +26,14 @@ function Webcam() {
     <div className="Webcam">
       <div className="container">
         <div className="webcam-box">
-          <Cam type="cam"/>
+          <div className="camera">
+            <Cam type="cam"/>
+          </div>
+          <div className="label"></div>
         </div>
         <div className="contents">
-          <div className="label-box">
+          <div className="main-img"></div>
+          {/* <div className="label-box">
             <RecycleLabel color={labelColor[0]}>plastic</RecycleLabel>
             <RecycleLabel color={labelColor[1]}>brown_glass</RecycleLabel>
             <RecycleLabel color={labelColor[2]}>can</RecycleLabel>
@@ -42,7 +46,7 @@ function Webcam() {
             <RecycleLabel color={labelColor[9]}>vinyl</RecycleLabel>
             <RecycleLabel color={labelColor[10]}>white_glass</RecycleLabel>
             <RecycleLabel color={labelColor[11]}>else</RecycleLabel>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

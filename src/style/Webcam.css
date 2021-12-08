@@ -17,11 +17,10 @@
 .Webcam .container {
   margin: 0 auto;
   padding-top: 110px;
+  padding-left: 40px;
   width: 1230px;
   height: 720px;
   background-color: white;
-  /* border: 1px solid gray; */
-  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); */
   overflow: hidden;
 }
 
@@ -32,14 +31,31 @@ h1 {
 .webcam-box {
   float: left;
   width: 550px;
-  height: 480px;
-  background-color: lightgray;
+  height: 560px;
   overflow: hidden;
+}
+
+.webcam-box .camera {
+  width: 550px;
+  height: 500px;
+  background-color: lightgray;
+}
+
+.webcam-box .label {
+  width: 180px;
+  height: 50px;
+  background-color: gray;
 }
 
 .contents {
   float: left;
   padding: 0 20px;
-  width: 550px;
+  width: 590px;
   height: 600px;
+}
+
+.main-img {
+  width: 580px;
+  height: 570px;
+  background-color: lightgrey;
 }

@@ -1,4 +1,4 @@
-.container {
+.map .container {
   padding-top: 80px;
   padding-left: 138px;
   width: 1500px;
@@ -26,10 +26,11 @@ button {
   cursor: pointer;
   background-color: white;
   color: rgb(172, 226, 88);
-  border: 1px solid rgb(172, 226, 88);
+  border: 1px solid rgb(110, 167, 20);
 }
 
 .slide-box {
+  font-family: 'Jua', sans-serif;
   overflow: hidden;
 }
 

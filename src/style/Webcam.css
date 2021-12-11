@@ -2,16 +2,15 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-  .Webcam .container {
-    width: 450px;
-    height: 600px;
-    border-radius: 15px;
-  }
-}
-
 .title {
   margin-bottom: 80px;
+}
+
+.page-name {
+  margin-left: 500px;
+  margin-top: 20px;
+  position: fixed;
+  font-family: 'Jua', sans-serif;
 }
 
 .Webcam .container {
@@ -30,32 +29,20 @@ h1 {
 
 .webcam-box {
   float: left;
-  width: 550px;
-  height: 560px;
+  width: 650px;
+  height: 600px;
   overflow: hidden;
 }
 
 .webcam-box .camera {
-  width: 550px;
-  height: 500px;
+  width: 650px;
+  height: 600px;
   background-color: lightgray;
-}
-
-.webcam-box .label {
-  width: 180px;
-  height: 50px;
-  background-color: gray;
 }
 
 .contents {
   float: left;
   padding: 0 20px;
-  width: 590px;
+  width: 500px;
   height: 600px;
-}
-
-.main-img {
-  width: 580px;
-  height: 570px;
-  background-color: lightgrey;
 }

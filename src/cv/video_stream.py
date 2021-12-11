@@ -151,9 +151,8 @@ if __name__ == '__main__':
                                            transforms.ToTensor(),
                                            transforms.Normalize([0.485, 0.456, 0.406],
                                                                 [0.229, 0.224, 0.225])])
-  loaded_model = load_checkpoint('C:/Users/zuu03/media_project/media-project/src/cv/13.pth')
+  loaded_model = load_checkpoint('C:/Users/zuu03/media_project/media-project/src/cv/FINAL.pth')
 
-  classes = ['plastic', 'brown_glass', 'can', 'cloth', 'green_glass', 'newspaper', 'paperbox', 'paperpack',
-                'styrofoam', 'vinyl', 'white_glass']
+  classes = ['PET', 'bone', 'brown_glass', 'can', 'clothes', 'green_glass', 'husk', 'newspaper', 'paperbox', 'paperpack', 'seed', 'styrofoam', 'vinyl']
 
   socketIo.run(app, debug=True)

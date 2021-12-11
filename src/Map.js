@@ -28,6 +28,9 @@ function Map() {
 
   return(
     <div className="map">
+      <div className="page-name">
+        종량제 봉투 판매점
+      </div>
       <div className="container">
         <div className="menu">
           <button onClick={moveSlide}>

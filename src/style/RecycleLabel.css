@@ -1,6 +1,6 @@
 .label {
   display: inline-block;
-  width: 70px;
+  width: 90px;
   margin: 10px;
   padding: 5px 0;
   border-radius: 5px;
@@ -10,11 +10,9 @@
   background-color: white;
   color: black;
   border: 1px solid black;
-  /* box-shadow: 0 2px 4px 0 gray; */
 }
 
 .on-focus {
   background-color: black;
   color: white;
-  /* box-shadow: 0 1px 2px 0 gray; */
 }

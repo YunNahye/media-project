@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_49dc0eeef4424a7ba2f172845810045b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_49dc0eeef4424a7ba2f172845810045b" ></div>
+        
+</body>
+<script>    
+    
+            var map_49dc0eeef4424a7ba2f172845810045b = L.map(
+                "map_49dc0eeef4424a7ba2f172845810045b",
+                {
+                    center: [37.271132923529414, 127.04173995294117],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5c10efa63977403abfe40eb2c12ea643 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+            var marker_3f84980c5e0d42299da531342e4cfdcc = L.marker(
+                [37.2731279, 127.0442551],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_5a23fdcdbff14b2fbde4d8b324b206c4 = L.popup({"maxWidth": 600});
+
+        
+            var html_b850a58b1b8f47dda99d1d083eccef9e = $(`<div id="html_b850a58b1b8f47dda99d1d083eccef9e" style="width: 100.0%; height: 100.0%;">CU 매탄중앙점</div>`)[0];
+            popup_5a23fdcdbff14b2fbde4d8b324b206c4.setContent(html_b850a58b1b8f47dda99d1d083eccef9e);
+        
+
+        marker_3f84980c5e0d42299da531342e4cfdcc.bindPopup(popup_5a23fdcdbff14b2fbde4d8b324b206c4)
+        ;
+
+        
+    
+    
+            var marker_f8c6ce9f5a37450b80a9c7a8475586c7 = L.marker(
+                [37.2745551, 127.042631],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_933e260ffb2e46a3977373a5296559a4 = L.popup({"maxWidth": 600});
+
+        
+            var html_720693c3d2d544aba6f3d84f0fc6047c = $(`<div id="html_720693c3d2d544aba6f3d84f0fc6047c" style="width: 100.0%; height: 100.0%;">CU(매탄주공점)</div>`)[0];
+            popup_933e260ffb2e46a3977373a5296559a4.setContent(html_720693c3d2d544aba6f3d84f0fc6047c);
+        
+
+        marker_f8c6ce9f5a37450b80a9c7a8475586c7.bindPopup(popup_933e260ffb2e46a3977373a5296559a4)
+        ;
+
+        
+    
+    
+            var marker_fd6118b0a2f446c196a2041ab1d8484e = L.marker(
+                [37.2731279, 127.0442551],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_07f96fb673414be89f2ce6b25fd0585a = L.popup({"maxWidth": 600});
+
+        
+            var html_4679a4240d71410d8a28e25621cf78cc = $(`<div id="html_4679a4240d71410d8a28e25621cf78cc" style="width: 100.0%; height: 100.0%;">CU(매탄중앙점)</div>`)[0];
+            popup_07f96fb673414be89f2ce6b25fd0585a.setContent(html_4679a4240d71410d8a28e25621cf78cc);
+        
+
+        marker_fd6118b0a2f446c196a2041ab1d8484e.bindPopup(popup_07f96fb673414be89f2ce6b25fd0585a)
+        ;
+
+        
+    
+    
+            var marker_070c2cbf5d724a80b3c92329f0ac3f15 = L.marker(
+                [37.2596505, 127.0453531],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_7bf0ea36f0b74738b986258e57e36754 = L.popup({"maxWidth": 600});
+
+        
+            var html_83366c3a06fe46d7ae62ddd72ad943ce = $(`<div id="html_83366c3a06fe46d7ae62ddd72ad943ce" style="width: 100.0%; height: 100.0%;">CU(영통구청점)</div>`)[0];
+            popup_7bf0ea36f0b74738b986258e57e36754.setContent(html_83366c3a06fe46d7ae62ddd72ad943ce);
+        
+
+        marker_070c2cbf5d724a80b3c92329f0ac3f15.bindPopup(popup_7bf0ea36f0b74738b986258e57e36754)
+        ;
+
+        
+    
+    
+            var marker_169a2d138e3044deb2ee0feb58f6d027 = L.marker(
+                [37.2716966, 127.0396241],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_955f11f0a03a46aa86f7a75c1b9802e8 = L.popup({"maxWidth": 600});
+
+        
+            var html_0cb342f004f342a0a8c49bb726004d3d = $(`<div id="html_0cb342f004f342a0a8c49bb726004d3d" style="width: 100.0%; height: 100.0%;">GS(매탄힐스점)</div>`)[0];
+            popup_955f11f0a03a46aa86f7a75c1b9802e8.setContent(html_0cb342f004f342a0a8c49bb726004d3d);
+        
+
+        marker_169a2d138e3044deb2ee0feb58f6d027.bindPopup(popup_955f11f0a03a46aa86f7a75c1b9802e8)
+        ;
+
+        
+    
+    
+            var marker_94c8c5df667048cab24b3b1e0be35d20 = L.marker(
+                [37.267422499999995, 127.0372038],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_919e3b9a30d74f998b59c186bc52fe65 = L.popup({"maxWidth": 600});
+
+        
+            var html_42d9a81d4c144c4b97db686d905fe527 = $(`<div id="html_42d9a81d4c144c4b97db686d905fe527" style="width: 100.0%; height: 100.0%;">GS25 한아름점</div>`)[0];
+            popup_919e3b9a30d74f998b59c186bc52fe65.setContent(html_42d9a81d4c144c4b97db686d905fe527);
+        
+
+        marker_94c8c5df667048cab24b3b1e0be35d20.bindPopup(popup_919e3b9a30d74f998b59c186bc52fe65)
+        ;
+
+        
+    
+    
+            var marker_15bea2d484b14f9283046105a0221689 = L.marker(
+                [37.273618799999994, 127.04081869999999],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_91bda5f34260419b91038348aa0fb4df = L.popup({"maxWidth": 600});
+
+        
+            var html_73889c7d7b8e45888418e14ff50dec2a = $(`<div id="html_73889c7d7b8e45888418e14ff50dec2a" style="width: 100.0%; height: 100.0%;">GS25(매화점)</div>`)[0];
+            popup_91bda5f34260419b91038348aa0fb4df.setContent(html_73889c7d7b8e45888418e14ff50dec2a);
+        
+
+        marker_15bea2d484b14f9283046105a0221689.bindPopup(popup_91bda5f34260419b91038348aa0fb4df)
+        ;
+
+        
+    
+    
+            var marker_fecdcafaeb93428f836b216170abad66 = L.marker(
+                [37.2725179, 127.0424795],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_d4d77beafd1d4f749440e9f6e0d31a45 = L.popup({"maxWidth": 600});
+
+        
+            var html_d8c4bf7efe5d49249b0918d4cc0bfe26 = $(`<div id="html_d8c4bf7efe5d49249b0918d4cc0bfe26" style="width: 100.0%; height: 100.0%;">경기유통</div>`)[0];
+            popup_d4d77beafd1d4f749440e9f6e0d31a45.setContent(html_d8c4bf7efe5d49249b0918d4cc0bfe26);
+        
+
+        marker_fecdcafaeb93428f836b216170abad66.bindPopup(popup_d4d77beafd1d4f749440e9f6e0d31a45)
+        ;
+
+        
+    
+    
+            var marker_a727d829fffe4a1db3ed26905bf0e2a3 = L.marker(
+                [37.266281, 127.03802830000001],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_3a4a01e71aeb4d28a5d57b2ff2c0e21d = L.popup({"maxWidth": 600});
+
+        
+            var html_a2ce655466bf4b5db73d4cd7c5bef858 = $(`<div id="html_a2ce655466bf4b5db73d4cd7c5bef858" style="width: 100.0%; height: 100.0%;">드림마트</div>`)[0];
+            popup_3a4a01e71aeb4d28a5d57b2ff2c0e21d.setContent(html_a2ce655466bf4b5db73d4cd7c5bef858);
+        
+
+        marker_a727d829fffe4a1db3ed26905bf0e2a3.bindPopup(popup_3a4a01e71aeb4d28a5d57b2ff2c0e21d)
+        ;
+
+        
+    
+    
+            var marker_7a58d8a167464a76ad2aba222630677e = L.marker(
+                [37.2740817, 127.0434422],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_cb5407106015464c94d61d56158224e2 = L.popup({"maxWidth": 600});
+
+        
+            var html_b962e3cbbc804328af3148cdbcc33ea5 = $(`<div id="html_b962e3cbbc804328af3148cdbcc33ea5" style="width: 100.0%; height: 100.0%;">매탄DC생활용품점</div>`)[0];
+            popup_cb5407106015464c94d61d56158224e2.setContent(html_b962e3cbbc804328af3148cdbcc33ea5);
+        
+
+        marker_7a58d8a167464a76ad2aba222630677e.bindPopup(popup_cb5407106015464c94d61d56158224e2)
+        ;
+
+        
+    
+    
+            var marker_f7d40ec4a847401aaa35bd4e4f8af173 = L.marker(
+                [37.2728984, 127.04188559999999],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_3fc38812fbad45dab84270737fe1f56e = L.popup({"maxWidth": 600});
+
+        
+            var html_2bd065d01c8a4ded93a89210cbe874fd = $(`<div id="html_2bd065d01c8a4ded93a89210cbe874fd" style="width: 100.0%; height: 100.0%;">모닝마트(매탄1동)</div>`)[0];
+            popup_3fc38812fbad45dab84270737fe1f56e.setContent(html_2bd065d01c8a4ded93a89210cbe874fd);
+        
+
+        marker_f7d40ec4a847401aaa35bd4e4f8af173.bindPopup(popup_3fc38812fbad45dab84270737fe1f56e)
+        ;
+
+        
+    
+    
+            var marker_d7c88bb14a53439680cc5153668a94ab = L.marker(
+                [37.2739048, 127.04575700000001],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_0d5a172d6d21496390d2859a8e7b5433 = L.popup({"maxWidth": 600});
+
+        
+            var html_44c14b365756419b89a7d259109bcafc = $(`<div id="html_44c14b365756419b89a7d259109bcafc" style="width: 100.0%; height: 100.0%;">스타생활용품</div>`)[0];
+            popup_0d5a172d6d21496390d2859a8e7b5433.setContent(html_44c14b365756419b89a7d259109bcafc);
+        
+
+        marker_d7c88bb14a53439680cc5153668a94ab.bindPopup(popup_0d5a172d6d21496390d2859a8e7b5433)
+        ;
+
+        
+    
+    
+            var marker_511a4b639962400bb7ffa58db96c3068 = L.marker(
+                [37.2679355, 127.04090579999999],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_5d2cae3e397644ae8772fcda92c38f0e = L.popup({"maxWidth": 600});
+
+        
+            var html_f03599d5438f4d7d9276ba13bfd70144 = $(`<div id="html_f03599d5438f4d7d9276ba13bfd70144" style="width: 100.0%; height: 100.0%;">영생슈퍼</div>`)[0];
+            popup_5d2cae3e397644ae8772fcda92c38f0e.setContent(html_f03599d5438f4d7d9276ba13bfd70144);
+        
+
+        marker_511a4b639962400bb7ffa58db96c3068.bindPopup(popup_5d2cae3e397644ae8772fcda92c38f0e)
+        ;
+
+        
+    
+    
+            var marker_02f1d2eedd684e2f8f08bdc5b0895581 = L.marker(
+                [37.2733108, 127.0380541],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_96e8a340b7ad43fd9c9867bc04ac7f87 = L.popup({"maxWidth": 600});
+
+        
+            var html_85a042be747c441da5865895d872093f = $(`<div id="html_85a042be747c441da5865895d872093f" style="width: 100.0%; height: 100.0%;">우성마트</div>`)[0];
+            popup_96e8a340b7ad43fd9c9867bc04ac7f87.setContent(html_85a042be747c441da5865895d872093f);
+        
+
+        marker_02f1d2eedd684e2f8f08bdc5b0895581.bindPopup(popup_96e8a340b7ad43fd9c9867bc04ac7f87)
+        ;
+
+        
+    
+    
+            var marker_3dbd5f95e60345f0b81e54b585bf99d2 = L.marker(
+                [37.2727144, 127.04181580000001],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_7ec9f6401eb94bd3b88607379141c265 = L.popup({"maxWidth": 600});
+
+        
+            var html_22426cbf27974a3d9b25d405fb68ab4b = $(`<div id="html_22426cbf27974a3d9b25d405fb68ab4b" style="width: 100.0%; height: 100.0%;">제로마트(매탄1점)</div>`)[0];
+            popup_7ec9f6401eb94bd3b88607379141c265.setContent(html_22426cbf27974a3d9b25d405fb68ab4b);
+        
+
+        marker_3dbd5f95e60345f0b81e54b585bf99d2.bindPopup(popup_7ec9f6401eb94bd3b88607379141c265)
+        ;
+
+        
+    
+    
+            var marker_bf5aa17e3a6d48d2acbdbe7bd1eeaa2c = L.marker(
+                [37.26789539999999, 127.03950590000001],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_d30a83da4b0848f3b86921da8bf93668 = L.popup({"maxWidth": 600});
+
+        
+            var html_e5fd212266e64b759fa72553d1c22801 = $(`<div id="html_e5fd212266e64b759fa72553d1c22801" style="width: 100.0%; height: 100.0%;">진성마트(구행운)</div>`)[0];
+            popup_d30a83da4b0848f3b86921da8bf93668.setContent(html_e5fd212266e64b759fa72553d1c22801);
+        
+
+        marker_bf5aa17e3a6d48d2acbdbe7bd1eeaa2c.bindPopup(popup_d30a83da4b0848f3b86921da8bf93668)
+        ;
+
+        
+    
+    
+            var marker_fa9cbb931b224bebb194acb9b79d7d57 = L.marker(
+                [37.2745205, 127.04356409999998],
+                {}
+            ).addTo(map_49dc0eeef4424a7ba2f172845810045b);
+        
+    
+        var popup_cbddaf44f4254e0a869077a1f0412ef5 = L.popup({"maxWidth": 600});
+
+        
+            var html_bbbc25f7c75146dd917e4b54e3549b73 = $(`<div id="html_bbbc25f7c75146dd917e4b54e3549b73" style="width: 100.0%; height: 100.0%;">홈플익스프레스(매탄2점)</div>`)[0];
+            popup_cbddaf44f4254e0a869077a1f0412ef5.setContent(html_bbbc25f7c75146dd917e4b54e3549b73);
+        
+
+        marker_fa9cbb931b224bebb194acb9b79d7d57.bindPopup(popup_cbddaf44f4254e0a869077a1f0412ef5)
+        ;
+
+        
+    
+</script>

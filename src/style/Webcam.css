@@ -2,26 +2,24 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-  .App .container {
-    width: 450px;
-    height: 600px;
-    border-radius: 15px;
-  }
-}
-
 .title {
   margin-bottom: 80px;
 }
 
-.App .container {
+.page-name {
+  margin-left: 500px;
+  margin-top: 20px;
+  position: fixed;
+  font-family: 'Jua', sans-serif;
+}
+
+.Webcam .container {
   margin: 0 auto;
-  padding-top: 130px;
+  padding-top: 110px;
+  padding-left: 40px;
   width: 1230px;
   height: 720px;
   background-color: white;
-  /* border: 1px solid gray; */
-  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); */
   overflow: hidden;
 }
 
@@ -31,13 +29,20 @@ h1 {
 
 .webcam-box {
   float: left;
-  width: 550px;
+  width: 650px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.webcam-box .camera {
+  width: 650px;
   height: 600px;
   background-color: lightgray;
 }
 
 .contents {
   float: left;
-  width: 550px;
+  padding: 0 20px;
+  width: 500px;
   height: 600px;
 }

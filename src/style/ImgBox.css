@@ -1,0 +1,46 @@
+.img-box {
+  width: 500px;
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pet {
+  background-image: url("../img/1200_1800/페트병.jpg");
+}
+
+.bone, .husk, .seed {
+  background-image: url("../img/1200_1800/씨껍질.jpg");
+}
+
+.brown_glass, .green_glass {
+  background-image: url("../img/1200_1800/유리.jpg");
+}
+
+.can {
+  background-image: url("../img/1200_1800/캔.jpg");
+}
+
+.clothes {
+  background-image: url("../img/1200_1800/의류.jpg");
+}
+
+.newspaper {
+  background-image: url("../img/1200_1800/종이.jpg");
+}
+
+.paperbox {
+  background-image: url("../img/1200_1800/상자류.jpg");
+}
+
+.paperpack {
+  background-image: url("../img/1200_1800/종이팩.jpg");
+}
+
+.styrofoam {
+  background-image: url("../img/1200_1800/스티로폼.jpg");
+}
+
+.vinyl {
+  background-image: url("../img/1200_1800/비닐.jpg");
+}

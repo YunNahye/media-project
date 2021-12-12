@@ -1,25 +1,19 @@
-import './style/App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './Navigation';
-import RecycleLabel from './RecycleLabel';
+import Webcam from './Webcam';
+import Map from './Map';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navigation></Navigation>
-      <div className="container">
-        <div className="webcam-box">
-
-        </div>
-        <div className="contents">
-          <div className="label-box">
-            <RecycleLabel color="default">유리</RecycleLabel>
-            <RecycleLabel color="default">플라스틱</RecycleLabel>
-            <RecycleLabel color="default">종이</RecycleLabel>
-            <RecycleLabel color="default">캔</RecycleLabel>
-            <RecycleLabel color="default">스티로폼</RecycleLabel>
-          </div>
-        </div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Webcam />}/>
+          <Route path="/map" element={<Map />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -153,7 +153,7 @@ if __name__ == '__main__':
                                            transforms.ToTensor(),
                                            transforms.Normalize([0.485, 0.456, 0.406],
                                                                 [0.229, 0.224, 0.225])])
-  loaded_model = load_checkpoint('FINAL.pth')
+  loaded_model = load_checkpoint('C:/Users/이지원/Desktop/media-project/media-project/src/cv/FINAL.pth')
 
   classes = ['PET', 'bone', 'brown_glass', 'can', 'clothes', 'green_glass', 'husk', 'newspaper', 'paperbox', 'paperpack', 'seed', 'styrofoam', 'vinyl']
 

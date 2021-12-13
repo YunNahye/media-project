@@ -10,7 +10,7 @@ let socket = io.connect(`${endPoint}`)
 function Webcam() {
   const recycleType = ['pet', 'bone', 'brown_glass', 'can', 'clothes', 'green_glass', 'husk', 'newspaper', 'paperbox', 'paperpack', 'seed', 'styrofoam', 'vinyl'];
   const [imgType, setImgType] = useState("pet");
-
+  
   useEffect(() => {
     getMessages();
   }, [imgType]);

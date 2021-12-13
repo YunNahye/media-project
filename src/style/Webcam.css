@@ -7,9 +7,10 @@
 }
 
 .page-name {
-  margin-left: 500px;
+  margin-left: 350px;
   margin-top: 20px;
   position: fixed;
+  color: rgb(71, 112, 5);
   font-family: 'Jua', sans-serif;
 }
 

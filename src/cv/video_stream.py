@@ -33,18 +33,20 @@ def load_checkpoint(path):
 
 def webcam():
       ret, frame = capture.read()
-      region = frame[100:324, 100:324]
+      region = frame[100:424, 100:424]
       pil_image = Image.fromarray(region, mode="RGB")
       pil_image = train_transforms(pil_image)
       image = pil_image.unsqueeze(0)
 
       result = loaded_model(image)
-      _, maximum = torch.max(result.data, 1)
-      prediction = maximum.item()
-      text = classes[prediction]
+      prob, maximum = torch.max(result.data, 1)
+      prediction = 0
+      if -1.5 < prob:
+          prediction = maximum.item()
+      text = "scan the waste"
       socketIo.emit("message", prediction)
-      cv2.putText(frame, text, (100, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
-      cv2.rectangle(frame, (100, 100), (324, 324), (255, 0, 0), 2)
+      cv2.putText(frame, text, (150, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+      cv2.rectangle(frame, (50, 50), (424, 424), (0, 255, 0), 2)
       ret, jpeg = cv2.imencode('.jpg', frame)
       return jpeg.tobytes()
 
@@ -151,7 +153,7 @@ if __name__ == '__main__':
                                            transforms.ToTensor(),
                                            transforms.Normalize([0.485, 0.456, 0.406],
                                                                 [0.229, 0.224, 0.225])])
-  loaded_model = load_checkpoint('C:/Users/zuu03/media_project/media-project/src/cv/FINAL.pth')
+  loaded_model = load_checkpoint('FINAL.pth')
 
   classes = ['PET', 'bone', 'brown_glass', 'can', 'clothes', 'green_glass', 'husk', 'newspaper', 'paperbox', 'paperpack', 'seed', 'styrofoam', 'vinyl']
 

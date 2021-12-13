@@ -1,3 +1,5 @@
+# AI 분리수거 도우미 똑똑수거
+## 2021-2 MediaProject
 ### Installation 
 
 Clone this repository 
